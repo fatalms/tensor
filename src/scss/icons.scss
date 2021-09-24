@@ -1,0 +1,56 @@
+// Иконочный шрифт
+%ic {
+    font-family: "icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="_icon-"],
+[class*=" _icon-"] {
+    &:before {
+        @extend %ic;
+        display: block;
+    }
+}
+
+._icon-vk:before {
+    content: "\e900";
+}
+._icon-arrow-left:before {
+    content: "\e902";
+}
+._icon-cross:before {
+    content: "\e903";
+}
+._icon-phone:before {
+    content: "\e904";
+}
+._icon-map:before {
+    content: "\e905";
+}
+._icon-msg:before {
+    content: "\e906";
+}
+._icon-delete:before {
+    content: "\e907";
+}
+._icon-university:before {
+    content: "\e908";
+}
+._icon-tg:before {
+    content: "\e909";
+}
+._icon-wa:before {
+    content: "\e90a";
+}
+._icon-fb:before {
+    content: "\e90b";
+}
+._icon-mail:before {
+    content: "\e90c";
+}
