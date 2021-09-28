@@ -1,0 +1,42 @@
+.main {
+    // .page__container
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #333333;
+    }
+    // .main__logo
+    &__logo {
+    }
+    // .main__header
+    &__header {
+        font-family: TensorFont;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: math.div(47, 36) * 100%;
+    }
+    // .main__image
+    &__image {
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    // .main__image-item
+    &__image-item {
+    }
+    // .main__text
+    &__text {
+        font-size: 18px;
+        line-height: 126.84%;
+    }
+}
+
+.logo {
+    // .logo__img
+    &__img {
+    }
+}
+
+.header {
+}

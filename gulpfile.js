@@ -131,7 +131,11 @@ function fontstyle() {
 }
 
 function copyFolders() {
-    ["videos"].forEach((folder) => {
+    ["favicon.ico"].forEach((file) => {
+        src(`./src/${file}`).pipe(dest("./dist"))
+    });
+
+    [].forEach((folder) => {
         src("./src/" + folder + "/**/*.*", {})
             .pipe(newer("./" + folder + "/"))
             .pipe(dest("./" + folder + "/"));
