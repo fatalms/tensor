@@ -1,0 +1,44 @@
+.choice {
+    // .choice__container
+    &__container {
+    }
+    // .choice__list
+    &__list {
+        display: flex;
+        margin: 0px -10px;
+    }
+
+    // .choice__card
+    &__card {
+        flex: 0 1 50%;
+        margin: 0px 10px;
+    }
+}
+
+.select-card {
+    box-shadow: 0px 0px 4px rgba(45, 90, 125, 0.1);
+    border-radius: 8px;
+
+    // .select-card__img
+    &__img {
+        background: #eef8fe;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 55px 0px;
+        // height: 100px;
+        img {
+            max-height: 130px;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    // .select-card__title
+    &__title {
+        padding: 45px 0px;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+    }
+}
