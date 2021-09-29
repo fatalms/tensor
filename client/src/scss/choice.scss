@@ -4,14 +4,13 @@
     }
     // .choice__list
     &__list {
-        display: flex;
-        margin: 0px -10px;
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+        grid-gap: 20px;
     }
 
     // .choice__card
     &__card {
-        flex: 0 1 50%;
-        margin: 0px 10px;
     }
 }
 
