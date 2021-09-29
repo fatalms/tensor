@@ -16,7 +16,7 @@ $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 
-$mainColor: #000;
+$mainColor: #333333;
 
 @import "null-style";
 
@@ -56,5 +56,22 @@ body {
     flex: 1 1 auto;
 }
 
+// ._ibg {
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     position: relative;
+//     img {
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         top: 0;
+//         left: 0;
+//         object-fit: cover;
+//     }
+// }
+
 @import "ui";
+@import "header";
 @import "main-page";
+@import "classmates";

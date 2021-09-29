@@ -1,0 +1,56 @@
+.classmates {
+    // .classmates__container
+    &__container {
+        padding: 30px 0px 0px 0px;
+    }
+    // .classmates__list
+    &__list {
+    }
+}
+
+.list {
+    // display: flex;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+
+    // .list__card
+    &__card {
+        // flex: 0 0 50%;
+    }
+}
+
+.card {
+    display: grid;
+    grid-gap: 0px 10px;
+    grid-template: auto 1fr / 80px 1fr;
+    grid-template-areas:
+        "img user"
+        "img about";
+
+    // .card__img
+    &__img {
+        grid-area: img;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    // .card__user-name
+    &__user-name {
+        grid-area: user;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: math.div(29, 24) * 100%;
+    }
+    // .card__about
+    &__about {
+        grid-area: about;
+        font-size: 14px;
+        line-height: math.div(17, 14) * 100%;
+        color: #7a91b5;
+
+        span {
+            margin: 0px 0px 0px 10px;
+        }
+    }
+}
